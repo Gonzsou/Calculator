@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;     /*body has some padding by default*/
+    margin: 0;      
+}
+
+.calc{
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+.display {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+    padding: 20px 5px;
+}
+
+.calc-button {
+    background-color: #d8d9db;
+    color: black;   /*check standard AA to choose the correct amount of contrast "aa a11y colors"*/
+    height: 100%;
+    width: 24.5%;
+    border: 0;       /*buttons have a border by default*/
+    border-radius: 0; /*buttons have slight rounded corners by default*/
+    font-size: 40px;
+    cursor: pointer; /*turns mouse icon to a pointer*/
+}   
+
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+
+.calc-button:last-child {
+    background-color: #df974c;
+    color: white;
+}
+
+.calc-button:last-child:hover {
+    background-color: hsl(31, 70%, 69%);
+}
+
+.calc-button:last-child:active {
+    background-color: hsl(31, 70%, 49%);
+}
+
+.double {
+    width: 49.7%;
+}
+
+.triple {
+    width: 74.8%;
+}
+
+.calc-button-row{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
